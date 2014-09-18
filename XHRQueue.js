@@ -39,7 +39,7 @@ function XHRQueue() {
 				delete this.requests_key[key];
 			}
 			var i = this.requests.indexOf(xhrObj);
-			if (i > 0) {
+			if (i > -1) {
 				this.requests.splice(i, 1);
 			}
 			return this;
